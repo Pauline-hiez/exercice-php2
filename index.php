@@ -63,5 +63,104 @@ echo "<br>";
 
 // Exercice 4
 
+function horairesMayol ($jour) {
+
+switch ($jour) {
+    case "Lundi":
+    case "Mardi":
+    case "Mercredi":
+    case "Jeudi":
+    case "Vendredi":
+        $horaires = "10h - 19h";
+        break;
+
+    case "Samedi":
+        $horaires = "10h - 20h";
+        break;
+
+    case "Dimanche":
+        $horaires = "Fermé";
+        break;
+
+    default:
+        $horaires = "Jour inconnu";
+}
+return $horaires;
+}   
+
+echo horairesMayol("Lundi");
+echo "\n";
+echo horairesMayol("Samedi");
+echo "\n";
+echo horairesMayol("Dimanche");     
+
+echo "<br>";
+
+// Exercice 5
+
+function modeTransport($transport) {
+    switch ($transport) {
+        case "Bus":
+            $message = "Vous avez choisi le Bus du réseau Mistral 🚍";
+            break;
+        case "Bateau":
+            $message = "Vous avez choisi le Bateau-Bus du réseau Mistral ⛴️";
+            break;
+        default:
+            $message = "Mode de transport inconnu sur le réseau Mistral";
+    }
+    return $message;
+}
+
+echo modeTransport("Bus");
+echo "\n";
+
+echo modeTransport("Bateau");
+echo "\n";
+
+echo "<br>";
+
+// Exercice 6
+
+function resultatRct ($pointsRct, $pointsAdversaire) {
+    if ($pointsRct > $pointsAdversaire) {
+        return "Victoire🏆";
+    } elseif ($pointsRct < $pointsAdversaire) {
+        return "Défaite😞";
+    } else {
+        return "Nul 🤝";
+    }
+}
+
+echo resultatRct(25, 20);
+echo "\n";
+
+echo "<br>";
+
+// Exercice 7
+
+$destination = "Les Sablettes";
+
+switch ($destination) {
+    case "Les Sablettes":
+        echo "Quai 1 – Départ toutes les 20 min";
+        break;
+
+    case "La Seyne":
+        echo "Quai 2 – Départ toutes les 30 min";
+        break;
+
+    case "St Mandrier":
+        echo "Quai 3 – Départ toutes les 40 min";
+        break;
+
+    default:
+        echo "Destination inconnue sur le réseau Mistral";
+}
+
+echo "<br>";
+
+// Exercice 8
+
 
 

@@ -162,5 +162,47 @@ echo "<br>";
 
 // Exercice 8
 
+$carte = "Etudiant";
+$prix_initial = 50;
 
+if ($carte == "Etudiant") {
+    $reduction = 0.10;
+} elseif ($carte == "Sénior") {
+    $reduction = 0.15;
+} else {
+    $reduction = 0;
+}
 
+$prix_final = $prix_initial * (1 - $reduction);
+echo "Prix final : $prix_final €";
+
+echo "Prix initial : $prix_initial €<br>";
+echo "Réduction : " . ($reduction * 100) . "%<br>";
+echo "Prix final : $prix_final €";
+
+echo "<br>";
+
+// Exercice 9
+
+$meteo = "vent";
+
+switch ($meteo) {
+    case "soleil":
+        echo "Plage du Mourillon, attention aux coups de soleil !";
+        break;
+
+    case "pluie":
+        echo "Plage du Mourillon, attention aux averses !";
+        break;
+
+    case "vent":
+        echo "Plage du Mourillon, attention au mistral !";
+        break;
+
+    default:
+        echo "Plage du Mourillon, préparez-vous à toute éventualité !";
+}
+
+echo "<br>";
+
+// Exercice 10

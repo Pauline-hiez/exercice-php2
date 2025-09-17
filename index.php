@@ -206,3 +206,69 @@ switch ($meteo) {
 echo "<br>";
 
 // Exercice 10
+
+$categorie = "Adulte";
+
+if ($categorie == "Adulte") {
+    $prix = 20;
+} elseif ($billet == "Enfant") {
+    $prix = 10;
+} elseif ($carte == "V.I.P") {
+    $prix = 50;
+} else {
+    $prix = 100;
+}
+
+echo "Prix du billet : $prix €";
+
+echo "<br>";
+
+// Exercice 11
+
+$semaine = "Mercredi";
+
+switch ($semaine) {
+    case "Lundi":
+    case "Mardi":
+    case "Mercredi":
+    case "Jeudi":
+    case "Vendredi":
+        echo "Cours DWWM";
+        break;
+
+    case "Samedi":
+    case "Dimanche":    
+        echo "Repos";
+        break;
+
+    default:
+        echo "Jour inconnu";
+}
+
+echo "<br>";
+
+// Exercice 12
+
+$ligne = "bus 23";
+
+switch ($ligne) {
+    
+    case "bus 23":
+        $destination = "Cap Brun";
+        break;
+
+    case "bus 40":
+        $destination = "Mourillon";
+        break;
+
+    case "bateau":
+        $destination = "La Seyne";
+        break;
+
+    default:
+        $destination = "Inconnue";
+}
+
+echo "Destination : $destination";
+
+?>
